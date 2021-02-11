@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body style="background-color: gray;">
+    <div class="container">
+        <div style="margin-top: 20px;">
+            <div class="card" style="width: 40rem; margin: auto; border: none; background-color: black;">
+                <img src="https://cdn.mos.cms.futurecdn.net/Vh6eSp4siwggK7RUys72nP.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text text-center"><a onclick="LinkCount()" id="link" style="font-weight: bold;">View
+                            Product</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <button type="button" onclick="generateLink()" class="btn btn-success">Generate link</button>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <h3 id="linkFetch"></h3>
+            <h3 id="count"></h3>
+            <h5 id="updateAt"></h5>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
