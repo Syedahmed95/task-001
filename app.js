@@ -31,9 +31,7 @@ require("./app/routes/routes")(app, router)
 require("./app/models/models")(app, mongoose)
 
 app.use((req, res) => {
-    res.status(404).send({
-        message: "Not Found"
-    })
+    res.redirect("/product")
 })
 
 module.exports = app

@@ -21,7 +21,7 @@ const LinkCount = () => {
 
 const saveTask = async (data)=>{
     try{
-        const requestUrl = await fetch("http://localhost:3000/product",{
+        const requestUrl = await fetch("/product",{
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(data)
